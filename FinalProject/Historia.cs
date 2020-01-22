@@ -12,11 +12,57 @@ namespace FinalProject
 {
     public partial class Historia : Form
     {
+       // Form1 okno = new Form1();
+        int[] TopGameHistory = new int[10];
+        string[] TopGameHistoryNames = new string[10];
         public Historia()
         {
+            this.AutoSize = false;
             InitializeComponent();
+        }
+
+        public void dodajWynik(int wynik, string imie)
+        {
+            bool dodanyWynik = false;
+            for (int i = 0; i < TopGameHistory.Length; i++)
+            {
+                if (TopGameHistory[i] == 0 && dodanyWynik == false)
+                {
+                    TopGameHistory[i] = wynik;
+                    TopGameHistoryNames[i] = imie;
+                    dodanyWynik = true;
+                   // listBox1.Items.Add(TopGameHistory[i] + TopGameHistoryNames[i]);
 
 
+
+                }
+                else if (dodanyWynik == false && TopGameHistory[i] < wynik)
+                {
+                    TopGameHistory[i] = wynik;
+                    TopGameHistoryNames[i] = imie;
+                    dodanyWynik = true;
+                    //listBox1.Items.Remove(i);
+                    //listBox1.Items.Add(TopGameHistory[i] + TopGameHistoryNames[i]);
+                }
+
+            }
+        }
+
+        public int[] zwrocWyniki()
+        {
+            return TopGameHistory;
+        }
+
+        public string[] zwrocNazwy()
+        {
+            return TopGameHistoryNames;
+        }
+
+        private void powrot_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+          //  okno.Visible = true;
         }
     }
+    
 }
