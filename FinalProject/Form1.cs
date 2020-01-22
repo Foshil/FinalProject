@@ -21,11 +21,13 @@ namespace FinalProject
         int _X = 300;
         int _Y = 220;
         string name = "Filip";
+        public delegate void stop_GamePtr();
 
         public Form1()
         {
             InitializeComponent();
             timer1.Stop();
+            
             //rysujPostac();
             przeszkoda1.Visible = false;
             przeszkoda2.Visible = false;
@@ -132,9 +134,10 @@ namespace FinalProject
 
         bool crashEvent(int pozycjaY, int pozycjaX)
         {
+            stop_GamePtr stop = new stop_GamePtr(stop_Game);
             if (pozycjaX + 20 >= _X && pozycjaY + 20 >= _Y && pozycjaX < _X + 20 && pozycjaY < _Y + 20) ;
             {
-                stop_Game();
+                stop.Invoke();
                 return false;
             }
         }
