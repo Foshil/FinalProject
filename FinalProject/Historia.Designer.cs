@@ -30,6 +30,7 @@
         {
             this.topLista = new System.Windows.Forms.LinkLabel();
             this.TOP = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // topLista
@@ -39,30 +40,39 @@
             this.topLista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.topLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.topLista.LinkColor = System.Drawing.Color.Black;
-            this.topLista.Location = new System.Drawing.Point(83, 96);
+            this.topLista.Location = new System.Drawing.Point(89, 25);
             this.topLista.Name = "topLista";
-            this.topLista.Size = new System.Drawing.Size(67, 135);
+            this.topLista.Size = new System.Drawing.Size(0, 15);
             this.topLista.TabIndex = 18;
-            this.topLista.TabStop = true;
-            this.topLista.Text = "1 - NONE\r\n2 - NONE\r\n3 - NONE\r\n4 - NONE\r\n5 - NONE\r\n6 - NONE\r\n7 - NONE\r\n8 - NONE\r\n9" +
-    " - NONE";
             // 
             // TOP
             // 
             this.TOP.AutoSize = true;
             this.TOP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.TOP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TOP.Location = new System.Drawing.Point(98, 65);
+            this.TOP.Location = new System.Drawing.Point(102, 9);
             this.TOP.Name = "TOP";
-            this.TOP.Size = new System.Drawing.Size(39, 16);
+            this.TOP.Size = new System.Drawing.Size(62, 16);
             this.TOP.TabIndex = 19;
-            this.TOP.Text = "TOP";
+            this.TOP.Text = "Historia";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(13, 171);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(238, 129);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Menu główne";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Historia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(263, 312);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.topLista);
             this.Controls.Add(this.TOP);
             this.Name = "Historia";
@@ -76,5 +86,6 @@
 
         private System.Windows.Forms.LinkLabel topLista;
         private System.Windows.Forms.Label TOP;
+        private System.Windows.Forms.Button button1;
     }
 }
