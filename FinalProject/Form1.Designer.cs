@@ -43,6 +43,8 @@
             this.przeszkoda3 = new System.Windows.Forms.PictureBox();
             this.przeszkoda2 = new System.Windows.Forms.PictureBox();
             this.przeszkoda1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pasek2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pasek1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -93,7 +95,7 @@
             this.start.BackColor = System.Drawing.Color.MediumTurquoise;
             this.start.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.start.ForeColor = System.Drawing.Color.SeaGreen;
-            this.start.Location = new System.Drawing.Point(464, 12);
+            this.start.Location = new System.Drawing.Point(464, 82);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(94, 46);
             this.start.TabIndex = 15;
@@ -128,7 +130,6 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
@@ -171,7 +172,7 @@
             this.przeszkoda3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.przeszkoda3.Location = new System.Drawing.Point(369, 28);
             this.przeszkoda3.Name = "przeszkoda3";
-            this.przeszkoda3.Size = new System.Drawing.Size(35, 31);
+            this.przeszkoda3.Size = new System.Drawing.Size(20, 20);
             this.przeszkoda3.TabIndex = 24;
             this.przeszkoda3.TabStop = false;
             // 
@@ -180,7 +181,7 @@
             this.przeszkoda2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.przeszkoda2.Location = new System.Drawing.Point(197, 28);
             this.przeszkoda2.Name = "przeszkoda2";
-            this.przeszkoda2.Size = new System.Drawing.Size(35, 31);
+            this.przeszkoda2.Size = new System.Drawing.Size(20, 20);
             this.przeszkoda2.TabIndex = 23;
             this.przeszkoda2.TabStop = false;
             // 
@@ -189,9 +190,29 @@
             this.przeszkoda1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.przeszkoda1.Location = new System.Drawing.Point(284, 28);
             this.przeszkoda1.Name = "przeszkoda1";
-            this.przeszkoda1.Size = new System.Drawing.Size(35, 31);
+            this.przeszkoda1.Size = new System.Drawing.Size(20, 20);
             this.przeszkoda1.TabIndex = 22;
             this.przeszkoda1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(464, 52);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(94, 20);
+            this.textBox1.TabIndex = 25;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.OliveDrab;
+            this.label1.Font = new System.Drawing.Font("Ravie", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(445, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 19);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Podaj nazwe";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -199,6 +220,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(584, 261);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.przeszkoda3);
             this.Controls.Add(this.przeszkoda2);
             this.Controls.Add(this.przeszkoda1);
@@ -243,6 +266,8 @@
         private System.Windows.Forms.PictureBox przeszkoda3;
         private System.Windows.Forms.PictureBox przeszkoda2;
         private System.Windows.Forms.PictureBox przeszkoda1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
